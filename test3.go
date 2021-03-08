@@ -3,6 +3,9 @@ package main
 import (
 	"bufio"
 	"fmt"
+
+	// "log"
+	// "log/syslog"
 	"os"
 )
 
@@ -20,5 +23,7 @@ func main() {
 	if ok == nil {
 		fmt.Printf("Name %s", name)
 	}
+	// syslogger, _ := syslog.NewLogger(syslog.LOG_ALERT, log.Flags())
+	// syslogger("Name %s", name)
 
 }
